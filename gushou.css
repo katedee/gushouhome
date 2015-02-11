@@ -139,7 +139,8 @@ body {
   min-height: 100%;
   height: 100%;
   background-color: #dfe9e6;
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif; }
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  color: #595959; }
 
 img {
   max-width: 100%; }
@@ -147,6 +148,9 @@ img {
 video {
   width: 100%    !important;
   height: auto   !important; }
+
+.icon-right-open {
+  color: #be5523; }
 
 .main-wrap {
   width: 100%; }
@@ -162,34 +166,67 @@ video {
     background-color: #256a55; }
 
 .content {
-  max-width: 950px;
+  max-width: 900px;
   width: 90%;
   margin: 0 auto;
   padding: 1px; }
-  .content.content1 h1 {
-    width: 323px;
-    height: 85px;
-    margin: 0;
-    background: #256a55 url("img/logotext.png") no-repeat;
-    text-indent: -9999px; }
-  .content.content1 h2 {
-    color: #fff;
-    background: #2e4d6f;
-    margin: 2% 0 0 0;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 3.8rem; }
+  .content.content1 {
+    padding: 13% 0 6% 0; }
+    .content.content1 h1 {
+      width: 355px;
+      height: 100px;
+      margin: 0;
+      background: #256a55 url("img/logotext.png") no-repeat 24px center;
+      background-size: 280px auto;
+      text-indent: -9999px; }
+    .content.content1 h2 {
+      color: #fff;
+      background: #2e4d6f;
+      padding: 0 6% 0 3.3%;
+      margin: 0.6% 0 0 0;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 4.5rem; }
 
+.content2 > div {
+  margin: 2rem 0;
+  border: 1px solid #a3bfb7; }
 .content2 img.mac {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 60%;
+  max-width: 538px; }
 .content2 .sign-up {
+  padding: 2%;
   background: url("img/wavebg.png"); }
 .content2 .features-list, .content2 .video-wrap {
-  float: left; }
-.content2 .features-list, .content2 .video-wrap {
-  width: 50%; }
+  float: left;
+  width: 49%; }
+.content2 .features {
+  background: #fff;
+  padding: 1rem; }
+.content2 .features-list {
+  padding: 0.5% 3% 3% 3.5%;
+  border-right: 1px solid #a3bfb7;
+  margin: 1.5% 1% 1.5% 0; }
+  .content2 .features-list h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: normal; }
+  .content2 .features-list ul {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+    font-size: 1.3rem; }
+    .content2 .features-list ul li {
+      margin-bottom: 1.2rem; }
+      .content2 .features-list ul li:last-of-type {
+        margin-bottom: 0; }
 
+.content3 > div {
+  margin: 6% 0 16% 0; }
 .content3 .blurb {
   width: 33.33%;
   float: left; }
@@ -198,21 +235,50 @@ video {
 .content3 .calendar, .content3 .team, .content3 .victories {
   width: 80%;
   margin: 0 auto; }
+  .content3 .calendar img, .content3 .team img, .content3 .victories img {
+    margin: 0 auto;
+    display: block; }
+  .content3 .calendar p, .content3 .calendar h3, .content3 .team p, .content3 .team h3, .content3 .victories p, .content3 .victories h3 {
+    text-align: center; }
+  .content3 .calendar h3, .content3 .team h3, .content3 .victories h3 {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 0;
+    padding-bottom: 1rem; }
+  .content3 .calendar p, .content3 .team p, .content3 .victories p {
+    font-size: 1.3rem; }
 
 .video-wrap {
-  max-width: 100%; }
+  position: relative;
+  padding-bottom: 32.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-left: 0.8%; }
 
-@media (max-width: 1020px) {
-  .video-wrap {
-    position: relative;
-    padding-bottom: 26.25%;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0; }
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
-  .video-wrap iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; } }
+.content4 {
+  color: #fff;
+  position: relative; }
+  .content4 .phone {
+    width: 35%;
+    float: left; }
+    .content4 .phone img {
+      position: absolute;
+      width: 28%;
+      max-width: 252px;
+      top: -70px;
+      right: 64%; }
+  .content4 .bottom-text {
+    width: 65%;
+    float: right;
+    font-size: 1.4rem;
+    margin: 2% 0 40% 0; }
+    .content4 .bottom-text h3 {
+      font-size: 1.7rem; }

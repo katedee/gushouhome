@@ -17,6 +17,8 @@ $mint : #dfe9e6;
 $darkgreen : #256a55;
 $clay : #be5523;
 $darkblue : #2e4d6f;
+$grey : #595959;
+$lightgrey : #e5e5e5;
 
 
 html {
@@ -29,6 +31,7 @@ body {
   height: 100%;
   background-color: $mint;
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  color: $grey;
 }
 
 img {
@@ -38,6 +41,10 @@ img {
 video {
   width: 100%    !important;
   height: auto   !important;
+}
+
+.icon-right-open {
+  color: $clay;
 }
 
 
@@ -64,50 +71,97 @@ video {
  }//main-bg
 
  .content {
- 	max-width: 950px;
+ 	max-width: 900px;
  	width: 90%;
   margin: 0 auto;
   padding: 1px;
 
   &.content1 {
+
+    padding: 13% 0 6% 0;
+
     h1{
-      width: 323px;
-      height: 85px;
+      width: 355px;
+      height: 100px;
       margin: 0;
-      background: $darkgreen url('img/logotext.png') no-repeat;
+      background: #256a55 url("img/logotext.png") no-repeat 24px center;
+      background-size: 280px auto;
       text-indent: -9999px;
       }//h1
 
       h2 {
         color: #fff;
         background: $darkblue;
-        margin: 2% 0 0 0;
+        padding: 0 6% 0 3.3%;
+        margin: 0.6% 0 0 0;
         display: inline-block;
         text-transform: uppercase;
-        font-size: 3.8rem;
+        font-size: 4.5rem;
       }
     }//content1
  }//content
 
  .content2 {
+
+  &>div {
+    margin: 2rem 0;
+    border: 1px solid darken($mint,20);
+  }
   img.mac {
     display: block;
     margin: 0 auto;
+    width: 60%;
+    max-width: 538px;
   }
   .sign-up {
+    padding:2%;
     background: url('img/wavebg.png');
   }
 
   .features-list, .video-wrap {
     float: left;
+    width: 49%;
   }
-  
-  .features-list,.video-wrap {
-    width: 50%;
+
+  .features {
+    background: #fff;
+    padding: 1rem;
   }
+
+  .features-list {
+    padding: 0.5% 3% 3% 3.5%;
+    border-right: 1px solid darken($mint,20);
+    margin: 1.5% 1% 1.5% 0;
+
+    h3 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      font-weight: normal;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 0;
+      margin-bottom: 0;
+      padding-left: 1em;
+      text-indent: -1em;
+      font-size: 1.3rem;
+
+      li{
+        margin-bottom: 1.2rem;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }//li
+    }//ul
+  }//features-list
  }//content2
 
  .content3 {
+  &>div {
+    margin: 6% 0 16% 0;
+  }
   .blurb {
    width: 33.33%;
    float: left;
@@ -120,30 +174,71 @@ video {
   .calendar,.team,.victories {
     width: 80%;
     margin: 0 auto;
+
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+
+    p, h3 {
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      border-bottom: 1px solid $lightgrey;
+      margin-bottom: 0;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
   }
 
  }//content 3
 
- .video-wrap {
-  max-width: 100%;
- }
+.video-wrap {
+  position: relative;
+  padding-bottom: 32.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-left: 0.8%;
+}
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
+.content4{
+  color: #fff;
+  position: relative;
 
- @media (max-width: 1020px) {
-   .video-wrap {
-    position: relative;
-    padding-bottom: 26.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
+  .phone {
+    width:35%;
+    float: left;
+
+    img {
+      position: absolute;
+      width: 28%;
+      max-width: 252px;
+      top: -70px;
+      right: 64%;
+    }
   }
-  .video-wrap iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  
+  .bottom-text{
+    width: 65%;
+    float: right;
+    font-size: 1.4rem;
+    margin: 2% 0 40% 0;
+
+    h3 {
+      font-size: 1.7rem;
+    }
   }
- }
-
-
+}//content4
 
