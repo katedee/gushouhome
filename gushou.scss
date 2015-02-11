@@ -2,14 +2,148 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
 .clearfix:after {
-   content: " ";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+ content: " ";
+ visibility: hidden;
+ display: block;
+ height: 0;
+ clear: both;
 }
 
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+$mint : #dfe9e6;
+$darkgreen : #256a55;
+$clay : #be5523;
+$darkblue : #2e4d6f;
+
+
+html {
+  font-size: 62.5%;
+  height:100%;
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+  background-color: $mint;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+img {
+  max-width:100%;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+
+.main-wrap {
+  width: 100%;
+ }//main-wrap
+
+ .main-bg {
+ 	width: 100%;
+
+  &.main-bg1 {
+    background: url('img/dragon.png') no-repeat;
+    background-size: cover;
+  }//bg1
+
+  &.main-bg3 {
+    background-color: #fff;
+ 	}//bg2
+
+   &.main-bg4 {
+    background-color: $darkgreen;
+	}//bg4
+
+ }//main-bg
+
+ .content {
+ 	max-width: 950px;
+ 	width: 90%;
+  margin: 0 auto;
+  padding: 1px;
+
+  &.content1 {
+    h1{
+      width: 323px;
+      height: 85px;
+      margin: 0;
+      background: $darkgreen url('img/logotext.png') no-repeat;
+      text-indent: -9999px;
+      }//h1
+
+      h2 {
+        color: #fff;
+        background: $darkblue;
+        margin: 2% 0 0 0;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 3.8rem;
+      }
+    }//content1
+ }//content
+
+ .content2 {
+  img.mac {
+    display: block;
+    margin: 0 auto;
+  }
+  .sign-up {
+    background: url('img/wavebg.png');
+  }
+
+  .features-list, .video-wrap {
+    float: left;
+  }
+  
+  .features-list,.video-wrap {
+    width: 50%;
+  }
+ }//content2
+
+ .content3 {
+  .blurb {
+   width: 33.33%;
+   float: left;
+
+   img {
+     max-width: 120px;
+   }
+  }//blurb
+
+  .calendar,.team,.victories {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+ }//content 3
+
+ .video-wrap {
+  max-width: 100%;
  }
+
+
+ @media (max-width: 1020px) {
+   .video-wrap {
+    position: relative;
+    padding-bottom: 26.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  .video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+ }
+
+
 
