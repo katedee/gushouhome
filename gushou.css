@@ -281,7 +281,52 @@ video {
   .content4 .bottom-text {
     width: 65%;
     float: right;
-    font-size: 1.4rem;
-    margin: 2% 0 40% 0; }
-    .content4 .bottom-text h3 {
-      font-size: 1.7rem; }
+    font-size: 1.4rem; }
+  .content4 div.bottom-text {
+    margin: 0 0 40% 0; }
+  .content4 h3.bottom-text {
+    font-size: 1.7rem;
+    margin: 5% 0 1% 0; }
+
+@media (max-width: 760px) {
+  .features .features-list, .features .video-wrap {
+    width: 100%; }
+  .features .features-list {
+    border-right: none;
+    border-bottom: 1px solid #a3bfb7; }
+  .features .video-wrap {
+    padding-bottom: 52.25%;
+    margin-left: 0; } }
+@media (max-width: 760px) {
+  .content3 {
+    padding: 7% 0 20% 0; }
+    .content3 .blurb {
+      width: 70%;
+      margin: 0 auto 10% auto;
+      float: none; }
+      .content3 .blurb:last-of-type {
+        margin: 0 auto 0 auto; } }
+@media (max-width: 500px) {
+  .content4 .phone img {
+    width: 50%;
+    right: 50%; }
+  .content4 h3.bottom-text {
+    width: 50%;
+    font-size: 3.8rem;
+    margin: 18% 0; }
+  .content4 div.bottom-text {
+    width: 100%; }
+    .content4 div.bottom-text p {
+      width: 100%;
+      clear: both; } }
+@media (max-width: 380px) {
+  .content3 .blurb:last-of-type {
+    margin-bottom: 20%; }
+
+  .content4 .phone img {
+    width: 40%;
+    right: 30%; }
+  .content4 h3.bottom-text {
+    width: 100%;
+    font-size: 5rem;
+    margin: 50% 0 3% 0; } }

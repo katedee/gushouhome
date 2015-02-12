@@ -13,6 +13,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
+//* =============================================================================
+//                   Base Styles
+//========================================================================== */
+
 $mint : #dfe9e6;
 $darkgreen : #256a55;
 $clay : #be5523;
@@ -47,6 +51,10 @@ video {
   color: $clay;
 }
 
+
+//* =============================================================================
+//                   Home Page
+//========================================================================== */
 
 .main-wrap {
   width: 100%;
@@ -237,11 +245,109 @@ video {
     width: 65%;
     float: right;
     font-size: 1.4rem;
-    margin: 2% 0 40% 0;
-
-    h3 {
-      font-size: 1.7rem;
-    }
   }
+
+  div.bottom-text {
+    margin: 0 0 40% 0;
+  }
+
+  h3.bottom-text {
+    font-size: 1.7rem;
+    margin: 5% 0 1% 0;
+  }
+
 }//content4
 
+
+
+
+//* =============================================================================
+//                   Media Queries
+//========================================================================== */
+
+@media (max-width: 760px) {
+
+
+  .features{
+    .features-list, .video-wrap {
+      width: 100%;
+    }
+
+    .features-list {
+      border-right: none;
+      border-bottom: 1px solid #a3bfb7;
+    }
+
+    .video-wrap {
+      padding-bottom: 52.25%;
+      margin-left: 0;
+    }
+  }//features
+}//760
+
+@media (max-width: 760px) {
+  .content3 {
+    padding: 7% 0 20% 0;
+    .blurb {
+      width: 70%;
+      margin: 0 auto 10% auto;
+      float: none;
+
+      &:last-of-type{
+        margin: 0 auto 0 auto;
+      }
+    }
+  }//content3
+}//760
+
+@media (max-width: 500px) {
+  .content4{
+
+    .phone img{
+      width: 50%;
+      right: 50%;
+    }
+
+    h3.bottom-text{
+      width: 50%;
+      font-size: 3.8rem;
+      margin: 18% 0;
+    }
+
+    div.bottom-text{
+      width: 100%;
+
+      p{
+        width: 100%;
+        clear: both;
+      }//p
+    }//div.bottom-text
+
+  }//content4
+}//500
+
+@media (max-width: 380px) {
+
+  .content3 {
+    .blurb{
+        &:last-of-type{
+          margin-bottom: 20%;
+        }
+      }//blurb
+  }//content3
+
+  .content4{
+
+    .phone img{
+      width: 40%;
+      right: 30%;
+    }
+
+    h3.bottom-text{
+      width: 100%;
+      font-size: 5rem;
+      margin: 50% 0 3% 0;
+    }
+
+  }//content4
+}//500
